@@ -1,6 +1,7 @@
 import os
 
-from setuptools import setup, find_packages
+from setuptools import find_packages, setup
+
 
 def readme() -> str:
     """Utility function to read the README.md.
@@ -15,19 +16,20 @@ def readme() -> str:
     Returns:
         String of README.md file.
     """
-    return open(os.path.join(os.path.dirname(__file__), 'README.md')).read()
+    return open(os.path.join(os.path.dirname(__file__), "README.md")).read()
+
 
 setup(
-    name='ramp',
-    version='0.1.0',
-    author='Carolyn Johnston',
-    author_email='carolyn.johnston@dev.global',
-    description='Replicable AI for Microplanning',
-    python_requires='>=3',
-    license='',
-    url='',
+    name="ramp-fair",
+    version="0.1.1",
+    author="Carolyn Johnston",
+    author_email="carolyn.johnston@dev.global",
+    description="Replicable AI for Microplanning , Fork maintained for fAIr",
+    python_requires=">=3",
+    license="",
+    url="",
     packages=find_packages(),
-    package_dir={"":"."},
+    package_dir={"": "."},
     long_description=readme(),
-    long_description_content_type="text/markdown"
+    long_description_content_type="text/markdown",
 )
